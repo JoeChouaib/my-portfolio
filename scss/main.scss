@@ -1,0 +1,150 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+
+@import "./base/helpers";
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/slider";
+
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/navigation";
+
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/home";
+
+@import "./themes/themes";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+// Larger laptop screens media queries:
+@media screen and (min-width: 1365px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1439px) {
+  html {
+    font-size: 13px;
+  }
+}
+// smaller laptop screens media queries:
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 9px;
+  }
+}
+// Tablet screens media queries:
+@media screen and (max-width: 990px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 769px) {
+  html {
+    font-size: 7px;
+
+    .navbar-expand-lg .navbar-collapse {
+      justify-content: center !important;
+    }
+    .navbar .container-fluid {
+      padding: 0rem 6rem;
+    }
+
+    .first-section {
+      .glare-wine {
+        top: 30rem;
+        left: 0rem;
+      }
+      .glare-black {
+        top: 37rem;
+        left: 9rem;
+      }
+
+      padding: 8rem 2rem;
+      flex-direction: column-reverse;
+      gap: 4rem;
+      .left-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .right-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .second-section {
+      padding: 4rem 8rem;
+      .about-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        gap: 3rem;
+        .about-right-sub-wrapper {
+          width: 60%;
+          height: 23rem;
+          align-self: center;
+        }
+        .about-left-sub-wrapper {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .tech-cards-wrapper {
+        .row {
+          padding-left: 2rem;
+        }
+      }
+    }
+    .third-section {
+      padding: 4rem 8rem;
+      .project-card-wrapper {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        height: fit-content;
+        .project-description-sub-wrapper {
+          width: 100%;
+        }
+        .project-image-sub-wrapper {
+          width: 100%;
+          height: 30rem;
+        }
+      }
+      .project-card-wrapper-reversed {
+        flex-direction: column;
+      }
+    }
+    .fourth-section {
+      padding: 4rem 8rem;
+      .fourth-section-sub-wrapper {
+        .contact-wrapper {
+          flex-direction: column-reverse;
+          gap: 4rem;
+          .form-wrapper {
+            width: 100%;
+          }
+          .vector-illustration-wrapper {
+            width: 80%;
+            justify-self: center;
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

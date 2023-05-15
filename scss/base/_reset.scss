@@ -1,0 +1,42 @@
+// overriding bootstrap nav bar styling
+header .bg-light {
+  background-color: $white-color !important;
+}
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+.navbar .container-fluid {
+  padding: 0rem 9rem;
+}
+.nav-item {
+  font: 500 2rem $secondary-font;
+}
+
+.nav-link:focus {
+  color: $primary-color !important;
+}
+.nav-link.active {
+  color: $primary-color !important;
+}
+.navbar-nav .nav-link {
+  font-size: 1.8rem;
+}
+.navbar-nav {
+  gap: 2rem;
+}
+.navbar-expand-lg .navbar-collapse {
+  display: flex;
+}
+
+// bootstrap form
+.form-control:focus {
+  border-color: $primary-color !important;
+  box-shadow: none !important;
+}
+label {
+  font-size: 1.6rem;
+}
+.form-control {
+  font-size: 1.4rem !important;
+  padding: 0.8rem 0.75rem !important;
+}

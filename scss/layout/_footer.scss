@@ -1,0 +1,37 @@
+footer {
+  position: relative;
+  width: 100vw;
+  height: 10rem;
+  background-color: $blackish-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    span {
+      color: $light-gray-color;
+      font: 400 1.6rem $secondary-font;
+      letter-spacing: 0.2rem;
+    }
+    a {
+      font-size: 2rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: $light-gray-color;
+      &:hover {
+        color: $lighter-gray-color;
+      }
+    }
+  }
+  .copyright-span {
+    position: absolute;
+    font: 300 1.2rem $secondary-font;
+    color: #ffffff;
+    bottom: 1rem;
+    right: 1.5rem;
+  }
+}

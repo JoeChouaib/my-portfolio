@@ -1,0 +1,18 @@
+.primary-btn {
+  @include shared-btn;
+  color: $white-color;
+  background-color: $primary-color;
+  &:hover {
+    background-color: $primary-color-hover;
+    border: 0.1rem solid $primary-color-hover;
+  }
+}
+.secondary-btn {
+  @include shared-btn;
+  color: $primary-color;
+  background-color: $white-color;
+  &:hover {
+    background-color: $lighter-gray-color;
+    color: $primary-color-hover;
+  }
+}
