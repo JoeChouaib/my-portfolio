@@ -66,6 +66,9 @@ html {
     }
 
     .first-section {
+      padding: 10rem 2rem;
+      flex-direction: column-reverse;
+      gap: 6rem;
       .glare-wine {
         top: 30rem;
         left: 0rem;
@@ -75,9 +78,6 @@ html {
         left: 9rem;
       }
 
-      padding: 8rem 2rem;
-      flex-direction: column-reverse;
-      gap: 4rem;
       .left-container {
         width: 100%;
         justify-content: center;

@@ -5,3 +5,15 @@ header {
   left: 0;
   z-index: 9999;
 }
+
+.progress-container {
+  background-color: transparent;
+  height: 0.2rem;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: $primary-color !important;
+  height: 100%;
+  width: 0%;
+}
